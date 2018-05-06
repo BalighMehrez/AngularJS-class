@@ -1,2 +1,2 @@
-# module1-solution
-The solution for module 1 assignment
+# AngularJS-Class
+in this repo i 'll upload all solutions for the course
