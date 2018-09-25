@@ -36,7 +36,7 @@
         var alreadyBought = [];
 
         service.buyItem = function (itemIdex) {
-            alreadyBought.push(toBuy.splice(itemIdex, 1));
+            alreadyBought.push(toBuy.splice(itemIdex, 1)[0]);
         };
         service.getToBuyItems = function () {
             return toBuy;
