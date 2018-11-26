@@ -1,1 +1,8 @@
-<div class="loader"></div>
+<div class="loader">
+    <ol>
+        <li ng-repeat="item in list.found">
+          {{ item.quantity }} of {{ item.name }}
+          <!-- <button ng-click="list.onRemove({index: $index});">Remove Item</button> -->
+        </li>
+      </ol>
+</div>
