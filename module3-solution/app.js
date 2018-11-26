@@ -43,7 +43,7 @@
 
     function foundItemsDirective() {
         var ddo = {
-            templateUrl: 'loader\itemsloaderindicator.template.html',
+            templateUrl: 'loader/itemsloaderindicator.template.html',
             scope: {
                 items: '<',
                 myTitle: '@title',
