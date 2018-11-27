@@ -17,7 +17,7 @@
             promise.then(function(response){    
                 narrowItDown.found =  response;
                 console.log(narrowItDown.found);
-                console.log(narrowItDown.found(0));
+                console.log(narrowItDown.found[0]);
             })
             //narrowItDown.found = MenuSearchService.getMatchedMenuItems(narrowItDown.searchTerm);
         };
@@ -38,7 +38,7 @@
             }).then(function (result) {
                 // process result and only keep items that match
                 var foundItems;
-                foundItems = result.data.menu_items.find(o => o.description.indexOf(searchTerm) != -1);
+                foundItems = result.data.menu_items.filter(o => o.description.indexOf(searchTerm) != -1);
                 // return processed items
                 return foundItems;
             });
