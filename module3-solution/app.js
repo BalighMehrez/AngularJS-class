@@ -16,7 +16,8 @@
             var promise = MenuSearchService.getMatchedMenuItems(narrowItDown.searchTerm);
             promise.then(function(response){    
                 narrowItDown.found =  response;
-                console.log(narrowItDown.found[0]);
+                console.log(narrowItDown.found);
+                console.log(narrowItDown.found(0));
             })
             //narrowItDown.found = MenuSearchService.getMatchedMenuItems(narrowItDown.searchTerm);
         };
