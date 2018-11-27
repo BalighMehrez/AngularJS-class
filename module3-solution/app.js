@@ -18,11 +18,8 @@
                 narrowItDown.found =  response;
             })
         };
-        narrowItDown.removeItem = function(index){
-            console.log(narrowItDown.found.length);                   
+        narrowItDown.removeItem = function(index){                       
             narrowItDown.found.splice(index,1);
-            console.log('itemremoved');
-            console.log(narrowItDown.found.length);     
         };
     }
 
