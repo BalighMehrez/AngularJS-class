@@ -13,7 +13,11 @@
         narrowItDown.searchTerm = "";
         narrowItDown.found = [];
         narrowItDown.findItems = function () {
-            narrowItDown.found = MenuSearchService.getMatchedMenuItems(narrowItDown.searchTerm);
+            var promise = MenuSearchService.getMatchedMenuItems(narrowItDown.searchTerm);
+            promise.then(fnuction(response){
+                narrowItDown.found=  response.data;
+            })
+            //narrowItDown.found = MenuSearchService.getMatchedMenuItems(narrowItDown.searchTerm);
         };
         NarrowItDownController.removeItem = function(index){
 
