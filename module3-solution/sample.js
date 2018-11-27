@@ -12,10 +12,10 @@
       var ddo = {
         templateUrl: 'shoppingList.html',
         scope: {
-          items: '<',
-          myTitle: '@title',
-          badRemove: '=',
-          onRemove: '&'
+          items: '<'
+        //   ,myTitle: '@title',
+        //   badRemove: '=',
+        //   onRemove: '&'
         },
         controller: ShoppingListDirectiveController,
         controllerAs: 'list',
