@@ -21,6 +21,7 @@
             })
         };
         narrowItDown.removeItem = function(index){
+            console.log('itemremoved');
             narrowItDown.found.slice(index,1);
         };
     }
