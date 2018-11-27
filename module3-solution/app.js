@@ -37,7 +37,6 @@
                 // process result and only keep items that match
                 var foundItems;
                 foundItems = result.data.menu_items.find(o => o.description.indexOf(searchTerm) != -1);
-                console.log(foundItems);
                 // return processed items
                 return foundItems;
             });
