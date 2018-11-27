@@ -16,13 +16,13 @@
             var promise = MenuSearchService.getMatchedMenuItems(narrowItDown.searchTerm);
             promise.then(function(response){    
                 narrowItDown.found =  response;
-                console.log(narrowItDown.found);
-                console.log(narrowItDown.found[0]);
             })
         };
         narrowItDown.removeItem = function(index){
-            console.log('itemremoved');
+            console.log(narrowItDown.found.length);                   
             narrowItDown.found.slice(index,1);
+            console.log('itemremoved');
+            console.log(narrowItDown.found.length);     
         };
     }
 
@@ -38,7 +38,9 @@
             }).then(function (result) {
                 // process result and only keep items that match
                 var foundItems;
-                foundItems = result.data.menu_items.filter(o => o.description.indexOf(searchTerm) != -1);
+                if (searchTerm != ""){
+                    foundItems = result.data.menu_items.filter(o => o.description.indexOf(searchTerm) != -1);
+                }               
                 // return processed items
                 return foundItems;
             });
