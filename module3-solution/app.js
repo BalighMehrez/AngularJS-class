@@ -22,7 +22,7 @@
         };
         narrowItDown.removeItem = function(index){
             narrowItDown.found.slice(index,1);
-        }
+        };
     }
 
 
