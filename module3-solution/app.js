@@ -14,7 +14,7 @@
         narrowItDown.found = [];
         narrowItDown.findItems = function () {
             var promise = MenuSearchService.getMatchedMenuItems(narrowItDown.searchTerm);
-            promise.then(fnuction(response){
+            promise.then(function(response){
                 narrowItDown.found=  response.data;
             })
             //narrowItDown.found = MenuSearchService.getMatchedMenuItems(narrowItDown.searchTerm);
