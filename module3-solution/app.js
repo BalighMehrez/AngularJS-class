@@ -19,10 +19,9 @@
                 console.log(narrowItDown.found);
                 console.log(narrowItDown.found[0]);
             })
-            //narrowItDown.found = MenuSearchService.getMatchedMenuItems(narrowItDown.searchTerm);
         };
-        NarrowItDownController.removeItem = function(index){
-
+        narrowItDown.removeItem = function(index){
+            narrowItDown.found.slice(index,1);
         }
     }
 
@@ -51,7 +50,6 @@
             templateUrl: 'loader/itemsloaderindicator.template.html',
             scope: {
                 items: '<',
-                myTitle: '@title',
                 onRemove: '&'
             },
             controller: NarrowItDownController,
