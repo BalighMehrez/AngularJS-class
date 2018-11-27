@@ -20,7 +20,7 @@
         };
         narrowItDown.removeItem = function(index){
             console.log(narrowItDown.found.length);                   
-            narrowItDown.found.slice(index,1);
+            narrowItDown.found.splice(index,1);
             console.log('itemremoved');
             console.log(narrowItDown.found.length);     
         };
